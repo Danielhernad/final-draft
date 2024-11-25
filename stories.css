@@ -1,0 +1,235 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+  }
+  
+  .container {
+    width: 100%;
+    padding: 20px;
+    background-color: #e5f9e5;
+  }
+  
+  header {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  header h1 {
+    font-size: 3em;
+    color: #4CAF50;
+    margin-bottom: 10px;
+  }
+  
+  header p {
+    font-size: 1.2em;
+    color: #2e7d32;
+  }
+  
+  .stories {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 30px;
+  }
+  
+  .story-card {
+    flex: 1;
+    min-width: 250px;
+    max-width: 300px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .story-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  .story-card h3 {
+    font-size: 1.6em;
+    color: #388e3c;
+    margin-top: 15px;
+  }
+  
+  .story-card .story-text {
+    font-size: 1.1em;
+    color: #555;
+    margin-top: 15px;
+    line-height: 1.6;
+  }
+  
+  /* Media Queries */
+  @media (max-width: 1024px) {
+    header h1 {
+      font-size: 2.5em;
+    }
+  
+    header p {
+      font-size: 1.1em;
+    }
+  
+    .stories {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .story-card {
+      width: 80%;
+      margin-bottom: 20px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    header h1 {
+      font-size: 2em;
+    }
+  
+    header p {
+      font-size: 1em;
+    }
+  
+    .stories {
+      padding: 10px;
+    }
+  
+    .story-card {
+      width: 100%;
+      margin-bottom: 15px;
+    }
+  
+    .story-card h3 {
+      font-size: 1.5em;
+    }
+  
+    .story-card .story-text {
+      font-size: 1em;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    header h1 {
+      font-size: 1.8em;
+    }
+  
+    header p {
+      font-size: 0.9em;
+    }
+  
+    .stories {
+      padding: 10px;
+    }
+  
+    .story-card {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+  
+    .story-card h3 {
+      font-size: 1.4em;
+    }
+  
+    .story-card .story-text {
+      font-size: 0.9em;
+    }
+  }
+  /* Global Styles for the Navigation Bar */
+nav {
+    background-color: #388e3c; /* Green background for the navbar */
+    padding: 15px 30px;
+    font-family: Arial, sans-serif;
+  }
+  
+  nav .logo {
+    color: white;
+    font-size: 1.8em;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: inline-block;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end; /* Align links to the right */
+    gap: 20px; /* Space between each link */
+  }
+  
+  nav ul li {
+    display: inline-block;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1em;
+    transition: color 0.3s ease, transform 0.3s ease;
+  }
+  
+  nav ul li a:hover {
+    color: #e5f9e5; /* Light green on hover */
+    transform: scale(1.1); /* Slightly grow on hover */
+  }
+  
+  /* Media Query for Tablets */
+  @media (max-width: 1024px) {
+    nav ul {
+      flex-direction: column;
+      align-items: center; /* Center the items */
+    }
+  
+    nav ul li {
+      margin: 10px 0; /* Add vertical space between links */
+    }
+  }
+  
+  /* Media Query for Mobile Devices */
+  @media (max-width: 768px) {
+    nav {
+      padding: 15px 20px; /* Reduce padding for smaller screens */
+    }
+  
+    nav .logo {
+      font-size: 1.5em; /* Slightly reduce logo size on mobile */
+    }
+  
+    nav ul {
+      flex-direction: column;
+      align-items: center; /* Center the links vertically */
+      width: 100%;
+    }
+  
+    nav ul li {
+      margin: 10px 0; /* Add space between links */
+    }
+  
+    nav ul li a {
+      font-size: 1.2em; /* Adjust font size for readability */
+    }
+  }
+  
+  /* Media Query for Very Small Mobile Devices */
+  @media (max-width: 480px) {
+    nav {
+      padding: 10px 15px; /* Even smaller padding for very small screens */
+    }
+  
+    nav .logo {
+      font-size: 1.3em; /* Logo gets smaller */
+    }
+  
+    nav ul li a {
+      font-size: 1.1em; /* Adjust font size for tiny screens */
+    }
+  }
+  

@@ -1,0 +1,257 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+  }
+  
+  .container {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: #e5f9e5; /* Light green background */
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  header {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  header h1 {
+    font-size: 2.5em;
+    color: #388e3c; /* Dark green */
+    margin-bottom: 10px;
+  }
+  
+  header p {
+    font-size: 1.1em;
+    color: #388e3c;
+  }
+  
+  .form-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  label {
+    font-size: 1.1em;
+    color: #388e3c;
+  }
+  
+  input, textarea {
+    padding: 10px;
+    font-size: 1em;
+    border: 2px solid #388e3c;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  textarea {
+    resize: vertical;
+  }
+  
+  button {
+    background-color: #388e3c;
+    color: white;
+    padding: 12px;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #2e7d32; /* Darker green on hover */
+  }
+  
+  /* Response message styling */
+  .response-message {
+    text-align: center;
+    background-color: #a5d6a7;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: #388e3c;
+    font-size: 1.2em;
+  }
+  
+  .response-message h3 {
+    font-size: 2em;
+  }
+  
+  .response-message p {
+    font-size: 1.1em;
+  }
+  
+  /* Media Queries for Responsiveness */
+  @media (max-width: 768px) {
+    .container {
+      padding: 20px;
+    }
+  
+    header h1 {
+      font-size: 2.2em;
+    }
+  
+    header p {
+      font-size: 1em;
+    }
+  
+    button {
+      font-size: 1.1em;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    header h1 {
+      font-size: 1.8em;
+    }
+  
+    header p {
+      font-size: 0.9em;
+    }
+  
+    button {
+      font-size: 1em;
+      padding: 10px;
+    }
+  }
+/* Global Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000; /* Ensure it stays on top of content */
+  }
+  
+  /* Flex settings for logo and menu */
+  nav .logo {
+    color: white;
+    font-size: 2em;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+  }
+  
+  nav ul li {
+    display: inline-block;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1em;
+    transition: color 0.3s ease, transform 0.3s ease;
+  }
+  
+  nav ul li a:hover {
+    color: #e5f9e5; /* Light green on hover */
+    transform: scale(1.1); /* Slightly grow on hover */
+  }
+  
+  /* Media Queries for Different Screen Sizes */
+  @media (max-width: 1024px) {
+    /* Tablet (1024px and below) */
+    nav {
+      background-color: #66bb6a; /* Lighter green for tablet */
+    }
+  
+    nav ul {
+      flex-direction: column;
+      align-items: center; /* Stack the links vertically */
+    }
+  
+    nav ul li {
+      margin: 10px 0; /* Add vertical space between links */
+    }
+  
+    nav ul li a {
+      font-size: 1.3em; /* Slightly bigger links */
+    }
+  
+    nav .logo {
+      font-size: 1.8em; /* Smaller logo for tablets */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    /* Mobile (768px and below) */
+    nav {
+      background-color: #388e3c; /* Medium green for mobile */
+    }
+  
+    nav ul {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    nav ul li {
+      margin: 12px 0; /* More vertical spacing between links */
+    }
+  
+    nav ul li a {
+      font-size: 1.4em; /* Larger font size for better readability */
+    }
+  
+    nav .logo {
+      font-size: 1.5em; /* Smaller logo size for mobile */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    /* Very Small Mobile Devices (480px and below) */
+    nav {
+      background-color: #2e7d32; /* Dark green for very small screens */
+    }
+  
+    nav ul {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    nav ul li {
+      margin: 15px 0; /* Larger margin for very small screens */
+    }
+  
+    nav ul li a {
+      font-size: 1.5em; /* Even larger font size for better readability */
+    }
+  
+    nav .logo {
+      font-size: 1.3em; /* Very small logo size for tiny screens */
+    }
+  }
+    

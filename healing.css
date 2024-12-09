@@ -1,0 +1,132 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 20px;
+  }
+  
+  /* Navigation Bar */
+  nav {
+    background-color: #3a6e45;
+    padding: 10px 0;
+  }
+  
+  .nav-links {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+  }
+  
+  .nav-links li {
+    margin: 0 20px;
+  }
+  
+  .nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    padding: 10px 15px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .nav-links a:hover {
+    background-color: #4f8f5f;
+  }
+  
+  /* Main Content Section */
+  .content {
+    background-color: #e0f2e9;
+    padding: 30px 10px;
+    border-radius: 8px;
+    margin-top: 20px;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .text-section {
+    max-width: 800px;
+    flex-grow: 1;
+  }
+  
+  .text-section h1 {
+    font-size: 2.5rem;
+    color: #3a6e45;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .text-section p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: #555;
+  }
+  
+  /* Responsive Media Queries */
+  @media (max-width: 1024px) {
+    .text-section h1 {
+      font-size: 2rem;
+    }
+  
+    .text-section p {
+      font-size: 1.1rem;
+    }
+  
+    .nav-links {
+      justify-content: flex-start;
+    }
+  
+    .nav-links li {
+      margin: 0 15px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .nav-links {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .nav-links li {
+      margin: 10px 0;
+    }
+  
+    .text-section h1 {
+      font-size: 1.8rem;
+    }
+  
+    .text-section p {
+      font-size: 1rem;
+    }
+  
+    .content {
+      padding: 20px 5px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .nav-links {
+      font-size: 1rem;
+    }
+  
+    .text-section h1 {
+      font-size: 1.6rem;
+    }
+  
+    .text-section p {
+      font-size: 0.9rem;
+    }
+  }
+  
